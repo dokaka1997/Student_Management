@@ -16,6 +16,8 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
+    // Sử dụng JPA và hibernate, dùng các hàm có sẵn để tương tác
+
     public StudentEntity createStudent(StudentEntity studentEntity) {
         return studentRepository.save(studentEntity);
     }

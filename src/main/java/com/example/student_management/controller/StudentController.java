@@ -14,7 +14,7 @@ import java.util.List;
 @CrossOrigin
 public class StudentController {
     private final StudentService studentService;
-
+// các controller điều hướng các request tới service
     @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;

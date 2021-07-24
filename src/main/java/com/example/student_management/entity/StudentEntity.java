@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "student")
+// tạo table trong database với tên và các cột
 public class StudentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
