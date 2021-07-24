@@ -30,9 +30,8 @@ public class StudentController {
         return ResponseEntity.ok(studentService.getAllStudent());
     }
 
-    @DeleteMapping
-    public ResponseEntity<Boolean> deleteStudent(@PathParam("id") Long id) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Boolean> deleteStudent(@PathVariable Long id) {
         return ResponseEntity.ok(studentService.deleteStudent(id));
     }
-
 }
